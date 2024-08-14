@@ -21,7 +21,7 @@ This is a framework for verifying the existence of accounts on Google (gmail and
 
    ```bash
    git clone https://github.com/them1k/DoesThisMailExist.git
-   cd your_repository
+   cd DoesThisMailExist
    ```
 **Running in a Virtual Environment**
 
@@ -50,7 +50,7 @@ To ensure that no issues arise when installing the requirements, we recommend ru
 Make sure you have Python 3.x and then install the dependencies using pip:
 
    ```bash
-   python3 -m pip install requirements.txt
+   python3 -m pip install -r requirements.txt
    ```
 
 **Chromedriver Setup**
