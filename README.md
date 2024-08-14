@@ -1,6 +1,10 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/them1k/assets/main/logo_dtme.png" alt="dtme"/>
+</p>
+
 ## Description
 
-This is a framework for verifying the existence of accounts on Google and Microsoft Office 365 using Selenium and Chromedriver. The script allows you to check accounts on these platforms, update Chromedriver, and update the application from a GitHub repository.
+This is a framework for verifying the existence of accounts on Google (gmail and workspace) and Microsoft (outlook, hotmail, Office 365...) using Selenium and Chromedriver based in timings and responses.
 
 ## Requirements
 
