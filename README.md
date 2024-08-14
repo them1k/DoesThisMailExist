@@ -23,6 +23,27 @@ This is a framework for verifying the existence of accounts on Google (gmail and
    git clone https://github.com/them1k/DoesThisMailExist.git
    cd your_repository
    ```
+**Running in a Virtual Environment**
+
+To ensure that no issues arise when installing the requirements, we recommend running the project in a virtual environment. If you prefer to do it without a virtual environment, you can skip these steps.
+
+1.Create a virtual environment in the project folder. You can do this with the following command:
+
+   ```bash
+   python3 -m venv venv
+   ```
+
+2.Activate the Virtual Environment:
+
+   ```bash
+   source venv/bin/activate
+   ```
+
+3.When you're done working, you can deactivate the virtual environment by running:
+
+   ```bash
+   deactivate
+   ```
 
 **Install Dependencies**
 
@@ -36,7 +57,11 @@ Make sure you have Python 3.x and then install the dependencies using pip:
 
 You dont need to have `Chromedriver` installed, the script will automatically download the latest version of `Chromedriver` automatically.
 
+
 ## Usage
+
+The file with the emails must have 1 email per line and must contain at least one email for the script to work. 
+All emails in that txt file must belong to the same domain.
 
 **Run the Script**
 
@@ -62,11 +87,11 @@ The script will present a main menu with the following options:
 
     Option 1: Verify the existence of Google accounts. Enter the path to the file containing email addresses and the path where results will be saved.
     Option 2: Verify the existence of Microsoft Office 365 accounts. Enter the path to the file containing email addresses and the path where results will be saved.
-    Option 3: Read the first line of the txt provided and check the spf and dns records to verify the mail server being used. After this it automatically selects option 1 or 2 depending on the result.
+    Option 3: Automatically checks the DNS records (MX and SPF) of the domain to be analyzed and will select option 1 (Google) or option 2 (Microsoft) depending on the result obtained from the query.
     
 **Update Chromedriver**
 
-    Download and install the latest version of Chromedriver for your system.
+    Download and install the latest version of Chromedriver for linux.
 
 **Install requirements**
 
@@ -98,4 +123,4 @@ You may not use this application for non-educational purposes.
 
 ## Contributing
 
-If you wish to contribute to this project, please open an issue or submit a pull request through GitHub.
+If you wish to contribute to this project, please open an issue or submit a pull request through GitHub. Thanks!
