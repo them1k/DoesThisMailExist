@@ -23,26 +23,6 @@ This is a framework for verifying the existence of accounts on Google (gmail and
    git clone https://github.com/them1k/DoesThisMailExist.git
    cd your_repository
    ```
-**Running in a Virtual Environment**
-
-To ensure that no issues arise when installing the requirements, we recommend running the project in a virtual environment. If you prefer to do it without a virtual environment, you can skip these steps.
-
-1. Create a virtual environment in the project folder. You can do this with the following command:
-
-   ```bash
-   python3 -m venv venv
-   ```
-2. Activate the Virtual Environment:
-   
-   `On Windows`
-   ```bash
-   venv\Scripts\activate
-   ```
-   
-   `On Linux`
-      ```bash
-   source venv/bin/activate
-   ```
 
 **Install Dependencies**
 
@@ -99,14 +79,6 @@ The script will present a main menu with the following options:
 **Exit**
 
     Exit the script.
-
-** Deactivate the Virtual Environment **
-
-When you're done working, you can deactivate the virtual environment by running:
-
-   ```bash
-   deactivate
-   ```
 
 ## Notes
 
