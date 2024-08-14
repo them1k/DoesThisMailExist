@@ -151,13 +151,6 @@ def setup_chrome_driver(force_update=False):
     
     return driver_path
 
-def install_requirements():
-    try:
-        subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt'])
-        print("{Fore.GREEN}\nRequirements installed successfully.{Style.RESET_ALL}")
-    except subprocess.CalledProcessError as e:
-        print(f"{Fore.RED}\nError installing requirements: {e}{Style.RESET_ALL}")
-
 def read_emails(filename):
     with open(filename, 'r') as file:
         emails = [line.strip() for line in file.readlines()]
@@ -647,12 +640,11 @@ def main_menu():
         print(f"{Fore.YELLOW}[2] Verify Microsoft accounts")
         print(f"{Fore.YELLOW}[3] I don't know the server, Do it for me!")
         print(f"{Fore.YELLOW}[4] Update Chromedriver")
-        print(f"{Fore.YELLOW}[5] Install requirements")
-        print(f"{Fore.YELLOW}[6] Update app")
-        print(f"{Fore.YELLOW}[7] Exit\n")
+        print(f"{Fore.YELLOW}[5] Update app")
+        print(f"{Fore.YELLOW}[6] Exit\n")
 
         try:
-            opcion = input("Select an option (1-7): ").strip()
+            opcion = input("Select an option (1-6): ").strip()
 
             if opcion == '1':
                 os.system('clear' if os.name == 'posix' else 'cls')
@@ -667,10 +659,8 @@ def main_menu():
             elif opcion == '4':
                 setup_chrome_driver(force_update=True)
             elif opcion == '5':
-                install_requirements()
-            elif opcion == '6':
                 update_application()
-            elif opcion == '7':
+            elif opcion == '6':
                 print(f"{Fore.BLUE}\n[!]Exiting... (and installing spyware){Style.RESET_ALL}")
                 time.sleep(1.5)
                 print(f"{Fore.GREEN}[!] Object wit PID = 1 - Modified!{Style.RESET_ALL}\nNowhere to hide! ;) \n\n{Fore.RED}Bye!{Style.RESET_ALL}")
