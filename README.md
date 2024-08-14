@@ -113,13 +113,28 @@ To use a specific proxy, you will be prompted to enter the proxy address in the 
 
 The script checks if the proxy is accessible before proceeding with account verification.
 
-The use of free proxies is available, but neither the integrity of the results nor the confidentiality of the results is guaranteed. Use it at your own risk and if you know what you are doing :)
-
 The output is always saved even if there is an error, so we avoid data loss if the script fails or we have an internet outage in the middle of the process.
 
-## Disclaimer
+## Disclaimer: Use of Free Proxies
 
-You may not use this application for non-educational purposes.
+While this tool supports the use of free proxies for email verification, we do not recommend using free proxies for serious or large-scale tasks. 
+Free proxies are often unreliable, slow, and insecure. They may result in:
+
+    Failed requests or incomplete verifications
+    Inaccurate results due to poor proxy performance
+    Potential exposure of sensitive data to third parties
+    Increased likelihood of IP blacklisting by email providers
+
+Use free proxies at your own risk, especially for non-critical testing or small-scale operations. 
+For better reliability, security, and performance, we strongly recommend using paid, high-quality proxy services.
+
+## Disclaimer: Legal
+
+This tool is intended for `educational purposes only` and should be used in compliance with all applicable laws and regulations. The misuse of this tool to perform unauthorized or illegal activities, such as spamming, unauthorized data collection, or email account testing without consent, is strictly prohibited.
+
+By using this tool, you agree to take full responsibility for your actions and ensure that all activities conducted with it are lawful and ethical. The developers and contributors of this tool `are not liable` for any misuse or illegal activity conducted using this software.
+
+`Please use responsibly and ethically.`
 
 ## Contributing
 
