@@ -79,9 +79,8 @@ The script will present a main menu with the following options:
     2: Verify Microsoft Accounts
     3: I don't know the server, Do it for me!
     4: Update Chromedriver
-    5: Install requirements
-    6: Update app
-    7: Exit
+    5: Update app
+    6: Exit
 
 **Account Verification**
 
@@ -92,10 +91,6 @@ The script will present a main menu with the following options:
 **Update Chromedriver**
 
     Download and install the latest version of Chromedriver for linux.
-
-**Install requirements**
-
-    Install the requirements for you if you have not yet done so ;)
 
 **Update the Application**
 
