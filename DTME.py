@@ -313,8 +313,8 @@ def save_results(filename, results):
             file.write(f"{email}: {exists}\n")
 
 def update_application():
-    repo_url = "URL_DEL_REPOSITORIO"  # mi repositorio de GitHub
-    branch = "main"  # Rama predeterminada
+    repo_url = "https://github.com/them1k/DoesThisMailExist"
+    branch = "main"
     local_dir = "./"
     
     print(f"{Fore.BLUE}\nUpdating the application from {repo_url} (branch: {branch})...{Style.RESET_ALL}")
@@ -328,7 +328,7 @@ def update_application():
     zip_url = f"{repo_url}/archive/refs/heads/{branch}.zip"
     download_and_extract(zip_url, temp_dir)
 
-    extracted_folder = f"{temp_dir}/{branch}"
+    extracted_folder = f"{temp_dir}/DoesThisMailExist-{branch}"
     
     for item in os.listdir(extracted_folder):
         s = os.path.join(extracted_folder, item)
